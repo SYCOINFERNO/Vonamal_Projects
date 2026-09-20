@@ -35,11 +35,9 @@ privacy so your address is not published. No Indian-address requirement for `.in
 
 **Social links** — three places each in `index.html`; search for `youtube.com` and `instagram.com`.
 
-**Add a film** — copy an `<article class="film">` block in `index.html` and change the
-text, poster filename and badge.
-
-**Add a song** — copy an `<li>` block inside `<ul class="albums">`. Point its `href` at the
-specific YouTube video instead of the channel once each track has its own link.
+**Add a film or a song** — both use the same card: copy an `<article class="work">` block in
+`index.html`, then change the title, text, `<dl>` credit rows, badge, poster filename and the
+YouTube link on the button.
 
 **Replace an image** — drop the new file in `assets/`, update the `src` and the
 `width`/`height` attributes (the real pixel size — they stop the page jumping while loading).
