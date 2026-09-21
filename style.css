@@ -95,8 +95,10 @@ section > h2 {
   animation: rise 0.7s ease-out both;
 }
 .hero h1 {
-  background: linear-gradient(180deg, #fff 30%, var(--gold) 115%);
+  background: linear-gradient(180deg, #fff 30%, var(--gold) 105%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
+  padding-bottom: 0.14em;   /* descenders sit outside the clipped box otherwise */
+  margin-bottom: 0.36em;
 }
 .tagline { color: var(--muted); font-size: 1.1em; margin-top: 0; }
 .tagline strong { color: var(--gold-soft); font-weight: 600; }
@@ -119,6 +121,8 @@ section > h2 {
 }
 .btn svg { width: 20px; height: 20px; fill: currentColor; }
 .btn:hover { border-color: var(--gold); color: var(--gold-soft); transform: translateY(-2px); }
+.btn.icon { width: 52px; height: 52px; padding: 0; border-radius: 50%; justify-content: center; }
+.btn.icon svg { width: 24px; height: 24px; }
 .btn.yt:hover { border-color: #ff3d3d; color: #ff6b6b; }
 .btn.ig:hover { border-color: #d6249f; color: #f07ad0; }
 
